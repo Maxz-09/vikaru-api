@@ -41,7 +41,7 @@ function displayApiInfo() {
         // Mini Games
         case "susunkata":
             apiInfoDiv.innerHTML = "<p>API to get text Susun Kata randomly.</p>" + "<p><strong>Headers:</strong><br><p></p>( REPLIES ) - Optional, to send a custom replies message. Available variables: %text%.</p>";
-            apiLinkBtn.disabled = false;
+            apiLinkBtn.disabled = true;
             break;
         case "tebakkata":
             apiInfoDiv.innerHTML = "<p>API to get text Tebak Kata randomly.</p>" + "<p><strong>Headers:</strong><br><p></p>( REPLIES ) - Optional, to send a custom replies message. Available variables: %text%.</p>";
@@ -115,7 +115,7 @@ function displayApiInfo() {
             apiInfoDiv.innerHTML =
                 "<p>API to get responses from Instagram for stalk.</p>" +
                 '<p><strong>Headers:</strong><br><p></p>( EXPERIMENTAL ) - Optional, for experimental use. Enter "true" to use it.<p></p></br>( REGEX ) - Must if use EXPERIMENTAL, to combine REGEX and messages<p></p>.</br>( ARG1 ) - Must if using EXPERIMENTAL, to retrieve messages in a capture group to use as argument.</p>';
-            apiLinkBtn.disabled = false;
+            apiLinkBtn.disabled = true;
             break;
             
         case "youtube":
@@ -130,7 +130,7 @@ function displayApiInfo() {
             apiInfoDiv.innerHTML =
                 "<p>API to get responses from IP lookup for location.</p>" +
                 '<p><strong>Headers:</strong><br><p></p>( EXPERIMENTAL ) - Optional, for experimental use. Enter "true" to use it.<p></p></br>( REGEX ) - Must if use EXPERIMENTAL, to combine REGEX and messages<p></p>.</br>( ARG1 ) - Must if using EXPERIMENTAL, to retrieve messages in a capture group to use as argument.</p>';
-            apiLinkBtn.disabled = false;
+            apiLinkBtn.disabled = true;
             break;   
         case "shortlink":
             apiInfoDiv.innerHTML =
