@@ -21,6 +21,7 @@ function getChatGPTResponse($query, $API = null)
         "nyx_gpt4" => "https://api.nyxs.pw/ai/gpt4?text=" . urlencode($query),
         "nyx_gpt" => "https://api.nyxs.pw/ai/gpt?text=" . urlencode($query),
         "nyx_turbo" => "https://api.nyxs.pw/ai/turbo?text=" . urlencode($query),
+        "nyx_id" => "https://api.nyxs.pw/ai/turbo?text=Jawab dengan bahasa indonesia: " . urlencode($query)
     ];
 
     if ($API && isset($urls[$API])) {
