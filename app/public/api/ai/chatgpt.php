@@ -19,8 +19,8 @@ function getChatGPTResponse($query, $API = null)
         "akhiro" => "https://akhiro-rest-api.onrender.com/api/gpt4?q=" . urlencode($query),
         "ngodingaja" => "https://api.ngodingaja.my.id/api/gpt?prompt=" . urlencode($query),
         "nyx_gpt4" => "https://api.nyxs.pw/ai/gpt4?text=" . urlencode($query),
-        "nyx_gpt" => "https://api.nyx.my.id/ai/gpt?text=" . urlencode($query),
-        "nyx_turbo" => "https://api.nyx.my.id/ai/turbo?text=" . urlencode($query),
+        "nyx_gpt" => "https://api.nyxs.pw/ai/gpt?text=" . urlencode($query),
+        "nyx_turbo" => "https://api.nyxs.pw/ai/turbo?text=" . urlencode($query),
     ];
 
     if ($API && isset($urls[$API])) {
