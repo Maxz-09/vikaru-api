@@ -21,7 +21,7 @@ function getChatGPTResponse($query, $API = null)
         "nyx_gpt4" => "https://api.nyxs.pw/ai/gpt4?text=" . urlencode($query),
         "nyx_gpt" => "https://api.nyxs.pw/ai/gpt?text=" . urlencode($query),
         "nyx_turbo" => "https://api.nyxs.pw/ai/turbo?text=" . urlencode($query),
-        "vikaru" => "https://api.nyxs.pw/ai/gpt4o?system=jawab%20sebagai%20cewek%20cantik%20bernama%20Vikaru%20yang%20sangat%20menawan%20dan%20imut%20dengan%20kosa%20kata%20yang%20pemalu,%20gaul,%20dan%20cuek&text=" . urlencode($query),
+        "vikaru" => "https://api.nyxs.pw/ai/gpt4o?system=jawab%20sebagai%20cewek%20cantik%20bernama%20Vikaru%20yang%20sangat%20manja%20dan%20imut%20dengan%20kosa%20kata%20yang%20pemalu,%20gaul,%20dan%20singkat&text=" . urlencode($query),
     ];
 
     if ($API && isset($urls[$API])) {
