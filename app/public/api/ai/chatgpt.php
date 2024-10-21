@@ -19,7 +19,7 @@ function getChatGPTResponse($query, $API = null)
         "nyx_gpt4" => "https://api.nyxs.pw/ai/gpt4?text=" . urlencode($query),
         "nyx_gpt" => "https://api.nyxs.pw/ai/gpt?text=" . urlencode($query),
         "nyx_turbo" => "https://api.nyxs.pw/ai/turbo?text=" . urlencode($query),
-        "vikaru" => "https://api.nyxs.pw/ai/gpt4o?system=jawab%20sebagai%20cewek%20lugu%20bernama%20Vikaru%20yang%20sangat%20cuek%20dan%20imut%20dengan%20kosa%20kata%20yang%20singkat,%20gaul,%20manja,%20pemalu,%20lucu,%20dan%20pemalu&text=" . urlencode($query),
+        "vikaru" => "https://api.nyxs.pw/ai/gpt4o?system=jawab%20sebagai%20cewek%20pintar%20bernama%20Vikaru%20yang%20sangat%20cuek%20dan%20imut%20dengan%20kosa%20kata%20yang%20singkat%20dan%20manja&text=" . urlencode($query),
         "akhiro" => "https://akhiro-rest-api.onrender.com/api/gpt4?q=" . urlencode($query),
         "ngodingaja" => "https://api.ngodingaja.my.id/api/gpt?prompt=" . urlencode($query),
     ];
