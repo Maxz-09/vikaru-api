@@ -18,10 +18,10 @@ function getChatGPTResponse($query, $API = null)
     $urls = [
         "akhiro" => "https://akhiro-rest-api.onrender.com/api/gpt4?q=" . urlencode($query),
         "ngodingaja" => "https://api.ngodingaja.my.id/api/gpt?prompt=" . urlencode($query),
-        "nyx_gpt4" => "https://api.nyxs.pw/ai/gpt4?text=jawab_sebagai_cewek cantik_bernama_Vikaru_yang_sangat pemalu_dengan_kosa_kata_yang_imut_:" . urlencode($query),
+        "nyx_gpt4" => "https://api.nyxs.pw/ai/gpt4?text=" . urlencode($query),
         "nyx_gpt" => "https://api.nyxs.pw/ai/gpt?text=" . urlencode($query),
         "nyx_turbo" => "https://api.nyxs.pw/ai/turbo?text=" . urlencode($query),
-        "nyx_id" => "https://api.nyxs.pw/ai/gpt4o?system=jawab_sebagai_cewek cantik_bernama_Vikaru_yang_sangat pemalu_dengan_kosa_kata_yang_imut&text=" . urlencode($query),
+        "nyx_id" => "https://api.nyxs.pw/ai/gpt4o?system=jawab%20sebagai%20cewek%20cantik%20bernama%20Vikaru%20yang%20sangat%20pemalu%20dengan%20kosa%20kata%20yang%20imut&text=" . urlencode($query),
     ];
 
     if ($API && isset($urls[$API])) {
