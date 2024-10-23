@@ -39,8 +39,8 @@ function displayApiInfo() {
             break;
         case "simsimi":
             apiInfoDiv.innerHTML =
-                "<p>API to get a response from Simsimi.</p>" +
-                '<p><strong>Headers:</strong><br><p></p>( REPLIES ) - Optional, to send a custom replies message. Available variables: %response%.<p></p><br>( LANGUAGE ) - Must, available languages: vi, en, ph, zh, ch, ru, id, ko, ar, fr, jp, de, etc.<p></p><br>( APIKEY ) - Optional, if you have the Simsimi API key, you can use it, if you dont have it, its okay, everything will work normally.<p></p></br>( EXPERIMENTAL ) - Optional, for experimental use. Enter "true" to use it.</p>';
+                "<p>API to get a response from Simsimi.</p>" + 
+                "<p><strong>Headers:</strong><br><p></p>( REPLIES ) - Optional, to send a custom replies message. Available variables: %response%.<p></p><br>( LANGUAGE ) - Must, available languages: vi, en, ph, zh, ch, ru, id, ko, ar, fr, jp, de, etc.<p></p><br>( APIKEY ) - Optional, if you have the Simsimi API key, you can use it, if you dont have it, its okay, everything will work normally.<p></p></br>( EXPERIMENTAL ) - Optional, for experimental use. Enter 'true' to use it.</p>";
             apiLinkBtn.disabled = false;
             break;
 
