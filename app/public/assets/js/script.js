@@ -37,6 +37,12 @@ function displayApiInfo() {
                 '<p><strong>Headers:</strong><br><p></p>( REPLIES ) - Optional, to send a custom replies message. Available variables: %response%.<p></p><br>( EXPERIMENTAL ) - Optional, for experimental use. Enter "true" to use it.<p></p></br>( REGEX ) - Must if use EXPERIMENTAL, to combine REGEX and messages.<p></p></br>( ARG1 ) - Must if using EXPERIMENTAL, to retrieve messages in a capture group to use as argument.</p>';
             apiLinkBtn.disabled = false;
             break;
+        case "simsimi":
+            apiInfoDiv.innerHTML =
+                "<p>API to get a response from Simsimi.</p>" +
+                "<p><strong>Headers:</strong><br><p></p>( REPLIES ) - Optional, to send a custom replies message. Available variables: %response%.<p></p><br>( LANGUAGE ) - Must, available languages: vi, en, ph, zh, ch, ru, id, ko, ar, fr, jp, de, etc.<p></p><br>( APIKEY ) - Optional, if you have the Simsimi API key, you can use it, if you don't have it, it's okay, everything will work normally.<p></p></br>( EXPERIMENTAL ) - Optional, for experimental use. Enter \"true\" to use it.</p>";
+            apiLinkBtn.disabled = false;
+            break;
 
         // Mini Games
         case "susunkata":
@@ -49,12 +55,6 @@ function displayApiInfo() {
             break;
         case "tebaklirik":
             apiInfoDiv.innerHTML = "<p>API to get text Tebak Lirik randomly.</p>" + "<p><strong>Headers:</strong><br><p></p>( REPLIES ) - Optional, to send a custom replies message. Available variables: %text%.</p>";
-            apiLinkBtn.disabled = true;
-            break;
-        case "simsimi":
-            apiInfoDiv.innerHTML =
-                "<p>API to get a response from Simsimi.</p>" +
-                "<p><strong>Headers:</strong><br><p></p>( REPLIES ) - Optional, to send a custom replies message. Available variables: %response%.<p></p><br>( LANGUAGE ) - Must, available languages: vi, en, ph, zh, ch, ru, id, ko, ar, fr, jp, de, etc.<p></p><br>( APIKEY ) - Optional, if you have the Simsimi API key, you can use it, if you don't have it, it's okay, everything will work normally.<p></p></br>( EXPERIMENTAL ) - Optional, for experimental use. Enter \"true\" to use it.</p>";
             apiLinkBtn.disabled = true;
             break;
 
@@ -107,7 +107,7 @@ function displayApiInfo() {
             apiInfoDiv.innerHTML =
                 "<p>API to get responses from Lyrics Search for result.</p>" +
                 '<p><strong>Headers:</strong><br><p></p>( REPLIES ) - Optional, to send a custom replies message. Available variables: %response%.<p></p><br>( EXPERIMENTAL ) - Optional, for experimental use. Enter "true" to use it.<p></p></br>( REGEX ) - Must if use EXPERIMENTAL, to combine REGEX and messages.<p></p></br>( ARG1 ) - Must if using EXPERIMENTAL, to retrieve messages in a capture group to use as argument.</p>';
-            apiLinkBtn.disabled = true;
+            apiLinkBtn.disabled = false;
             break;
         
         // Stalking 
@@ -130,7 +130,7 @@ function displayApiInfo() {
             apiInfoDiv.innerHTML =
                 "<p>API to get responses from IP lookup for location.</p>" +
                 '<p><strong>Headers:</strong><br><p></p>( EXPERIMENTAL ) - Optional, for experimental use. Enter "true" to use it.<p></p></br>( REGEX ) - Must if use EXPERIMENTAL, to combine REGEX and messages<p></p>.</br>( ARG1 ) - Must if using EXPERIMENTAL, to retrieve messages in a capture group to use as argument.</p>';
-            apiLinkBtn.disabled = true;
+            apiLinkBtn.disabled = false;
             break;   
         case "shortlink":
             apiInfoDiv.innerHTML =
@@ -142,7 +142,7 @@ function displayApiInfo() {
             apiInfoDiv.innerHTML =
                 "<p>API to get responses from Translate for result.</p>" +
                 '<p><strong>Headers:</strong><br><p></p>( REPLIES ) - Optional, to send a custom replies message. Available variables: %response%.<p></p><br>( EXPERIMENTAL ) - Optional, for experimental use. Enter "true" to use it.<p></p></br>( REGEX ) - Must if use EXPERIMENTAL, to combine REGEX and messages.<p></p></br>( ARG1 ) - Must if using EXPERIMENTAL, to retrieve messages in a capture group to use as argument.</p>';
-            apiLinkBtn.disabled = true;
+            apiLinkBtn.disabled = false;
             break;
 
         // Default
@@ -174,6 +174,9 @@ function visitApi() {
         case "mistral":
             window.open("api/ai/mistral.php", "_blank");
             break;
+        case "simsimi":
+            window.open("api/ai/simsimi.php", "_blank");
+            break;
 
         // Mini Games 
         case "susunkata":
@@ -184,9 +187,6 @@ function visitApi() {
             break;
         case "tebaklirik":
             window.open("api/games/tebaklirik.php", "_blank");
-            break;
-        case "simsimi":
-            window.open("api/games/simsimi.php", "_blank");
             break;
 
         // Random Text
@@ -274,9 +274,6 @@ function visitCredits(type) {
             break;
         case "itsreimau": // Itsreimau
             url = "https://itsreimau.is-a.dev/";
-            break;
-        case "akhiro": // AkhiroBOT Rest APIs
-            url = "https://akhiro-rest-api.onrender.com/";
             break;
         case "api-gabut": // API Gabut
             url = "https://api-gabut.bohr.io/";
