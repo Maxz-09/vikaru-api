@@ -47,7 +47,7 @@ if (!empty($data->query) && !empty($data->appPackageName) && !empty($data->messe
                 $argument1 = isset($argument[$capturingGroup1]) ? trim($argument[$capturingGroup1]) : '';
                 $variable = ['%response%'];
                 $replace = [getCariLaguResponse($argument1)];
-                $msg = $apimsg . "\n\n" . "Title: " . $response["title"] . "\n Album: " . $response["album"] . "\nCover: " . $response["thumb"] . "\n\n> *_[Hasil Pencarian Lagu]_* \n\n" . $response["lyrics"];
+                $msg = $apimsg . "\n\n" . "Title: " . $response["title"] . "\n Album: " . $response["album"] . "\nCover: " . $response["thumb"] . "\n\n> *_[Hasil Pencarian Lagu]_* \n\n" . $response["result"];
                 $replies = ["replies" => [["message" => $msg]]];
             }
         }
