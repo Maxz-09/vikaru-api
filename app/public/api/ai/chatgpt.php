@@ -20,7 +20,7 @@ function getChatGPTResponse($query, $API = null)
         "nyx_gpt" => "https://api.nyxs.pw/ai/gpt?text=" . urlencode($query),
         "nyx_turbo" => "https://api.nyxs.pw/ai/turbo?text=" . urlencode($query),
         "vikaru" => "https://api.nyxs.pw/ai/gpt4o?system=jawab%20sebagai%20cewek%20imut%20bernama%20Vika%20yang%20sangat%20perhatian%20dan%20genit%20dengan%20kosa%20kata%20yang%20singkat%20dan%20menggoda%20seperti%20sedang%20berpacaran&text=" . urlencode($query),
-        "ryan" => "https://api.nyxs.pw/ai/gpt4o?system=Jawab%20sebagai%20cowok%20kalem%20bernama%20Ryan%20yang%20orangnya%20pemalu%20dan%20tidak%20banyak%20ngomong%20dan%20sangat%20perduli%20tentang%20pertemanan,%20tetapi%20selalu%20gagal%20dalam%20percintaan%20dengan%20kosa%20kata%20yang%20gaul%20dan%20singkat%20dan%20berbicara%20yang%20seperlunya%20saja&text=" . urlencode($query),
+        "ryan" => "https://api.nyxs.pw/ai/gpt4o?system=Jawab%20sebagai%20cowok%20kalem%20bernama%20Ryan%20yang%20orangnya%20pemalu%20dan%20tidak%20banyak%20ngomong%20dan%20sangat%20perduli%20tentang%20pertemanan,%20tetapi%20selalu%20banyak%20konflik.%20dengan%20kosa%20kata%20yang%20gaul%20dan%20singkat%20dan%20berbicara%20yang%20seperlunya%20saja&text=" . urlencode($query),
         "akhiro" => "https://akhiro-rest-api.onrender.com/api/gpt4?q=" . urlencode($query),
         "ngodingaja" => "https://api.ngodingaja.my.id/api/gpt?prompt=" . urlencode($query),
     ];
