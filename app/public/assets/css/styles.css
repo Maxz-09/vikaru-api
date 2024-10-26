@@ -54,14 +54,6 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.header {
-  height: 65px;
-  display: flex;
-  background-color: #00BFFF;
-  width: 100%;
-  justify-content: space-around;
-}
-
 label {
   margin-right: 10px;
 }
