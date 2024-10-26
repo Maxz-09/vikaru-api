@@ -256,6 +256,9 @@ function visitOther(type) {
         case "help": // help
             url = "https://wa.me/6289508899033?text=Hello,%20I%20need%20your%20help%20on%20how%20to%20use%20the%20Rafael%20API";
             break;
+        case "vikaru-bot": // Vikaru-Bot
+            url = "https://github.com/Maxz-09/Vikaru-Bot";
+            break;
             
         // Default
         default:
