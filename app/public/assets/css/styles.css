@@ -36,12 +36,12 @@ body {
   font-size: 1.1em;
   text-align: center;
   border-radius: 20px;
-  background-color: #DC143C;
+  background-color: #2A4E4D;
   border: 0;
   margin-top: 20px;
-
-  color: white;
+  color: #FFFFFF;
   padding: 10px;
+  text-decoration: none;
 }
 
 .container {
