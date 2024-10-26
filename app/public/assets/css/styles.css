@@ -3,7 +3,7 @@ body {
   color: #FFFFFF;
   margin: 0;
   padding: 0;
-  floating-color: #111824;
+  background-color: #111824;
 }
 
 .floating {
@@ -12,7 +12,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  floating: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .floating-body {
@@ -28,7 +28,7 @@ body {
   padding: 20px;
   margin: auto;
   width: 50%;
-  floating-color: white;
+  background-color: white;
 }
 
 .floating-body button {
@@ -36,7 +36,7 @@ body {
   font-size: 1.1em;
   text-align: center;
   border-radius: 20px;
-  floating-color: #DC143C;
+  background-color: #DC143C;
   border: 0;
   margin-top: 20px;
 
@@ -48,7 +48,7 @@ body {
   max-width: 800px;
   margin: 50px auto;
   text-align: center;
-  floating-color: #222B3B;
+  background-color: #222B3B;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -57,10 +57,9 @@ body {
 .header {
   height: 65px;
   display: flex;
-  floating-color: #00BFFF;
+  background-color: #00BFFF;
   width: 100%;
   justify-content: space-around;
-
 }
 
 label {
@@ -76,7 +75,7 @@ ol {
 }
 
 footer {
-  floating-color: #333333ED;
+  background-color: #333333ED;
   color: #FFFFFF;
   text-align: center;
   padding: 10px;
@@ -99,7 +98,7 @@ a {
 
 #apiLinkBtnVisit {
   padding: 10px;
-  floating-color: #81FFB0;
+  background-color: #81FFB0;
   color: #222B3B;
   border: none;
   border-radius: 4px;
@@ -108,7 +107,7 @@ a {
 }
 
 #apiLinkBtnVisit:disabled {
-  floating-color: #939393;
+  background-color: #939393;
   color: #fff;
   padding: 10px;
   border: none;
@@ -118,7 +117,7 @@ a {
 
 #apiLinkBtn {
   padding: 10px;
-  floating-color: #2A4E4D;
+  background-color: #2A4E4D;
   color: #FFFFFF;
   border: none;
   border-radius: 4px;
