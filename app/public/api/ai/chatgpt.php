@@ -13,8 +13,7 @@ header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers
 // Get posted data
 $data = json_decode(file_get_contents("php://input"));
 
-function getChatGPTResponse($query, $API = null)
-{
+function getChatGPTResponse($query, $API = null) {
     $urls = [
         "nyx_gpt4" => "https://api.nyxs.pw/ai/gpt4?text=" . urlencode($query),
         "nyx_gpt" => "https://api.nyxs.pw/ai/gpt?text=" . urlencode($query),
