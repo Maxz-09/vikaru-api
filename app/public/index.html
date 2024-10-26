@@ -13,7 +13,7 @@
 			<div>
 				<h1>SELAMAT DATANG DI WEBSITE SAYA</h1>
 				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus sunt impedit, illum? Porro sapiente voluptas maiores modi, fugit natus, hic, sunt, doloremque expedita eveniet alias amet. Hic provident placeat distinctio.</p>
-				<button onclick=" putarmusic()">LANJUTKAN</button>
+				<button onclick="playmusic()">Continue</button>
 			</div>
 		</div>
 	</div>
@@ -124,9 +124,9 @@
         </div>
     </header>
         <script>
-		var a = document.getElementById('tampil');
-		function putarmusic(){
-			a.style.display = "none";
+		var a = document.getElementById('background');
+		function playmusic(){
+			a.style.display = "container";
 			var audio = new Audio('https://files.catbox.moe/x5v904.mp3');
 			audio.play();
 		}
