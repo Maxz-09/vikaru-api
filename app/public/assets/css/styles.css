@@ -116,39 +116,3 @@ a {
   cursor: pointer;
   text-decoration: none;
 }
-
-a {
-	color: black;
-}
-a:hover {
-	color: white;
-}
-.active {
-	color: white;
-}
-.header {
-	height: 65px;
-	display: flex;
-	background-color: #00BFFF;
-	width: 100%;
-	justify-content: space-around;
-
-}
-.header .satu h2 {
-	font-weight: bold;
-}
-.header .satu {
-	width: 50%;
-	margin: auto 0;
-	padding-left: 100px;
-}
-.header .dua {	
-	width: 50%;
-	margin: auto ;
-}
-
-.header ul li {
-	font-size: 1.2em;
-	display: inline-block;
-	margin: 0 10px;
-}
