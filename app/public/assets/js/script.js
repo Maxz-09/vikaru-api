@@ -290,8 +290,8 @@ function visitCredits(type) {
         case "ngodingaja": // Milfu Rest APIs
             url = "https://api.ngodingaja.my.id/";
             break;
-        case "nyx": // Nyx Rest-Api
-            url = "https://api.nyx.my.id/";
+        case "nyxs": // Nyxs Rest-Api
+            url = "https://api.nyxs.pw/";
             break;
         case "sandipbaruwal": // OtinXSandip API
             url = "https://sandipbaruwal.onrender.com/";
