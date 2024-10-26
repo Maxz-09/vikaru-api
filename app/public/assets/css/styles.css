@@ -1,47 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-* {
-	margin: 0;
-	padding: 0;
-	font-family: 'Poppins', sans-serif;
-}
-
-
-.tampil {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background: rgba(0, 0, 0, 0.7);
-}
-.tampil-body {
-	display: flex;
-	height: 100vh;
-	width: 100%;
-	text-align: center;
-	justify-content: center;
-}
-
-.tampil-body div {
-	border-radius: 20px;
-	padding: 20px;
-	margin: auto;
-	width: 50%;
-	background-color: white;
-}
-.tampil-body button {
-	cursor: pointer;
-	font-size: 1.1em;
-	text-align: center;
-	border-radius: 20px;
-	background-color: #DC143C;
-	border: 0;
-	margin-top: 20px;
-
-	color: white;
-	padding: 10px;
-}
-
 body {
   font-family: Arial, sans-serif;
   color: #FFFFFF;
@@ -121,4 +77,42 @@ a {
   border-radius: 4px;
   cursor: pointer;
   text-decoration: none;
+}
+
+#tampil {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.7);
+}
+
+#tampil-body {
+	display: flex;
+	height: 100vh;
+	width: 100%;
+	text-align: center;
+	justify-content: center;
+}
+
+#tampil-body div {
+	border-radius: 20px;
+	padding: 20px;
+	margin: auto;
+	width: 50%;
+	background-color: white;
+}
+
+#tampil-body button {
+	cursor: pointer;
+	font-size: 1.1em;
+	text-align: center;
+	border-radius: 20px;
+	background-color: #DC143C;
+	border: 0;
+	margin-top: 20px;
+
+	color: white;
+	padding: 10px;
 }
