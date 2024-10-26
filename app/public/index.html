@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Vikaru-API</title>
-        <link rel="stylesheet" href="assets/css/styles.css" />
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vikaru-API</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+        
     <div class="floating" id="floating">
 		<div class="floating-body">
 			<div>
@@ -17,7 +18,8 @@
 			</div>
 		</div>
 	</div>
-
+	
+    <head>
         <div class="container">
             <h1>Vikaru-API</h1>
             <p><strong>Vikaru-Api</strong> is a Web Server-based API that can be integrated into AutoResponder applications.</p>
@@ -63,23 +65,23 @@
                         <option value="shortlink">• Short Link</option>
                         <option value="translate">• Translate</option>
                     </optgroup>
-                    
                 </select>
             </div>
         </div>
         
-        <div class="container">
-            <h2>Information API</h2>
+    <div class="container">
+        <h2>Information API</h2>
         <div id="apiInfo">
-                    <p><strong>Select an API</strong> to see more information.</p>
+            <p><strong>Select an API</strong> to see more information.</p>
         </div>
      
-                <div id="apiLinks">
-                    <button id="apiLinkBtnVisit" disabled onclick="visitApi()">Visit API</button>
-                </div>
+        <div id="apiLinks">
+            <button id="apiLinkBtnVisit" disabled onclick="visitApi()">Visit API</button>
         </div>
-        <div class="container">
-            <h2>How to use the API</h2>
+    </div>
+    
+    <div class="container">
+        <h2>How to use the API</h2>
             <ol>
                 <li>Add a new <a href="https://play.google.com/store/apps/dev?id=7857280643314172854">AutoResponder</a> rule.</li>
                 <li>
@@ -96,45 +98,45 @@
                 <li>That's it! You are now ready to test your web server integration.</li>
             </ol>
              <button id="apiLinkBtn" onclick="visitOther('help')">Doesn't work ?</button>
-        </div>
+    </div>
 
-        <div class="container">
-            <h2>Contribution</h2>
-            <p>Special Thanks To :</p>
+    <div class="container">
+        <h2>Contribution</h2>
+        <p>Special Thanks To :</p>
             <button id="apiLinkBtn" onclick="visitCredits('anargya')">Anargya - src</button>
             <button id="apiLinkBtn" onclick="visitCredits('itsreimau')">Itsreimau - src</button>
             <button id="apiLinkBtn" onclick="visitCredits('AutoResponderAI-ID')">AutoResponder.ai ID</button>
             <button id="apiLinkBtn" onclick="visitCredits('bohr-io')">Bohr.io</button>
             <button id="apiLinkBtn" onclick="visitCredits('nyxs')">Nyxs Rest-Api</button>
             <button id="apiLinkBtn" onclick="visitCredits('sandipbaruwal')">OtinXSandip API</button>
-        </div>
+    </div>
 
-        <div class="container">
-            <h2>Donate</h2>
-            <p>Support The Developer :</p>
+    <div class="container">
+        <h2>Donate</h2>
+        <p>Support The Developer :</p>
             <button id="apiLinkBtn" onclick="visitDonate('saweria')">Saweria</button>
-        </div>
+    </div>
         
-        <div class="container">
-            <h2>Latest updates</h2>
-            <p>Date : 27/10/2024</p>
-                <audio controls src="https://files.catbox.moe/x5v904.mp3"></audio>
-                <p></p>
-                <button id="apiLinkBtn" onclick="visitOther('vikaru-bot')">Vikaru-Bot</button>
-        </div>
-        <script>
-		var a = document.getElementById('floating');
-		function playmusic(){
-			a.style.display = "none";
-			var audio = new Audio('https://files.catbox.moe/x5v904.mp3');
+    <div class="container">
+        <h2>Latest updates</h2>
+        <p>Date : 27/10/2024</p>
+            <audio controls src="https://files.catbox.moe/x5v904.mp3"></audio>
+        <p></p>
+        <button id="apiLinkBtn" onclick="visitOther('vikaru-bot')">Vikaru-Bot</button>
+    </div>
+    <script>
+	var a = document.getElementById('floating');
+	function playmusic(){
+		a.style.display = "none";
+		var audio = new Audio('https://files.catbox.moe/x5v904.mp3');
 			audio.play();
 		}
 	</script>
 
-        <footer>
-            <p>&copy; 2024 <a href="https://linktr.ee/Maxtream_09">Maxtream_09</a>. All Rights Reserved.</p>
-        </footer>
+    <footer>
+        <p>&copy; 2024 <a href="https://linktr.ee/Maxtream_09">Maxtream_09</a>. All Rights Reserved.</p>
+    </footer>
 
-        <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js"></script>
     </body>
 </html>
