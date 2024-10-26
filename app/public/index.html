@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en">
+    
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,6 +9,15 @@
         <link rel="stylesheet" href="assets/css/styles.css" />
     </head>
     <body>
+        	<div class="tampil" id="tampil">
+		<div class="tampil-body">
+			<div>
+				<h1>SELAMAT DATANG DI WEBSITE SAYA</h1>
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus sunt impedit, illum? Porro sapiente voluptas maiores modi, fugit natus, hic, sunt, doloremque expedita eveniet alias amet. Hic provident placeat distinctio.</p>
+				<button onclick=" putarmusic()">LANJUTKAN</button>
+			</div>
+		</div>
+	</div>
         <div class="container">
             <h1>Vikaru-API</h1>
             <p><strong>Vikaru-Api</strong> is a Web Server-based API that can be integrated into AutoResponder applications.</p>
@@ -112,6 +122,15 @@
                 <p></p>
                 <button id="apiLinkBtn" onclick="visitOther('vikaru-bot')">Vikaru-Bot</button>
         </div>
+        
+        <script>
+		var a = document.getElementById('tampil');
+		function putarmusic(){
+			a.style.display = "none";
+			var audio = new Audio('dashboard.mp3');
+			audio.play();
+		}
+	</script>
 
         <footer>
             <p>&copy; 2024 <a href="https://linktr.ee/Maxtream_09">Maxtream_09</a>. All Rights Reserved.</p>
