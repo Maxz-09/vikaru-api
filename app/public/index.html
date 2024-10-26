@@ -8,8 +8,8 @@
         <link rel="stylesheet" href="assets/css/styles.css" />
     </head>
     <body>
-        	<div class="background" id="background">
-		<div class="background-body">
+        	<div class="floating" id="floating">
+		<div class="floating-body">
 			<div>
 				<h1>SELAMAT DATANG DI WEBSITE SAYA</h1>
 				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus sunt impedit, illum? Porro sapiente voluptas maiores modi, fugit natus, hic, sunt, doloremque expedita eveniet alias amet. Hic provident placeat distinctio.</p>
@@ -124,10 +124,10 @@
         </div>
     </header>
         <script>
-		var a = document.getElementById('background');
+		var a = document.getElementById('floating');
 		function playmusic(){
 			a.style.display = "none";
-			var audio = new background('https://files.catbox.moe/x5v904.mp3');
+			var audio = new Audio('https://files.catbox.moe/x5v904.mp3');
 			audio.play();
 		}
 	</script>
