@@ -3,19 +3,19 @@ body {
   color: #FFFFFF;
   margin: 0;
   padding: 0;
-  background-color: #111824;
+  floating-color: #111824;
 }
 
-.background {
+.floating {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
+  floating: rgba(0, 0, 0, 0.7);
 }
 
-.background-body {
+.floating-body {
   display: flex;
   height: 100vh;
   width: 100%;
@@ -23,20 +23,20 @@ body {
   justify-content: center;
 }
 
-.background-body div {
+.floating-body div {
   border-radius: 20px;
   padding: 20px;
   margin: auto;
   width: 50%;
-  background-color: white;
+  floating-color: white;
 }
 
-.background-body button {
+.floating-body button {
   cursor: pointer;
   font-size: 1.1em;
   text-align: center;
   border-radius: 20px;
-  background-color: #DC143C;
+  floating-color: #DC143C;
   border: 0;
   margin-top: 20px;
 
@@ -48,7 +48,7 @@ body {
   max-width: 800px;
   margin: 50px auto;
   text-align: center;
-  background-color: #222B3B;
+  floating-color: #222B3B;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -57,7 +57,7 @@ body {
 .header {
   height: 65px;
   display: flex;
-  background-color: #00BFFF;
+  floating-color: #00BFFF;
   width: 100%;
   justify-content: space-around;
 
@@ -76,7 +76,7 @@ ol {
 }
 
 footer {
-  background-color: #333333ED;
+  floating-color: #333333ED;
   color: #FFFFFF;
   text-align: center;
   padding: 10px;
@@ -99,7 +99,7 @@ a {
 
 #apiLinkBtnVisit {
   padding: 10px;
-  background-color: #81FFB0;
+  floating-color: #81FFB0;
   color: #222B3B;
   border: none;
   border-radius: 4px;
@@ -108,7 +108,7 @@ a {
 }
 
 #apiLinkBtnVisit:disabled {
-  background-color: #939393;
+  floating-color: #939393;
   color: #fff;
   padding: 10px;
   border: none;
@@ -118,7 +118,7 @@ a {
 
 #apiLinkBtn {
   padding: 10px;
-  background-color: #2A4E4D;
+  floating-color: #2A4E4D;
   color: #FFFFFF;
   border: none;
   border-radius: 4px;
