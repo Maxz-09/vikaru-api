@@ -233,12 +233,12 @@ function visitApi() {
             window.open("api/random-text/quotes.php", "_blank");
             break;
 
-        // Islamic
+        // Islami
         case "hijriah":
-            window.open("api/islamic/hijriah.php", "_blank");
+            window.open("api/islami/hijriah.php", "_blank");
             break;
         case "jadwalsholat":
-            window.open("api/islamic/jadwalsholat.php", "_blank");
+            window.open("api/islami/jadwalsholat.php", "_blank");
             break;
 
         // Search
