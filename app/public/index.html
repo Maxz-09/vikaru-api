@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vikaru-API</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+    <div class="floating" id="floating">
+        <div class="floating-body">
+            <div>
+                <h1>Accept cookies!</h1>
+                <video controls width="250" height="250" src="https://files.catbox.moe/5wa72i.mp4"></video>
+                <p>
+                    This project is still under development, please feel free to  <a href="https://wa.me/6289508899033/?text=I%20want%20to%20contribute%20%2F%20report%20an%20issue%20about%20Vikaru-API">Contribute</a> or report any bugs/issues.
+                </p>
+                <button onclick="playmusic()">Accept 🍪</button>
+            </div>
+        </div>
+    </div>
+
+        <div class="container">
+            <h1>Vikaru-API</h1>
+            <p>
+                <strong>Vikaru-API</strong> is a Web Server-based API that can be integrated into AutoResponder applications.
+            </p>
+
+            <div id="apiOptions">
+                <label for="apiSelect">Select an API -></label>
+                <select id="apiSelect" onchange="displayApiInfo()">
+                    <option value="" disabled selected hidden>Click here</option>
+                    <optgroup label="- [ AI ] -">
+                        <option value="chatgpt">• ChatGPT</option>
+                                                <option value="gpt">• Test</option>
+                                                
+                        <option value="blackbox">• BlackBox</option>
+                        <option value="gemini">• Gemini</option>
+                        <option value="metallama">• Meta Llama</option>
+                        <option value="mistral">• Mistral</option>
+                        <option value="simsimi">• Simsimi</option>
+                    </optgroup>
+                    <optgroup label="- [ MINI GAMES ] -">
+                        <option value="susunkata">• Susun Kata</option>
+                        <option value="tebakkata">• Tebak Kata</option>
+                        <option value="tebaklirik">• Tebak Lirik</option>
+                    </optgroup>
+                    <optgroup label="- [ RANDOM TEXT ] -">
+                        <option value="truth">• Truth</option>
+                        <option value="dare">• Dare</option>
+                        <option value="bucin">• Bucin</option>
+                        <option value="hacker">• Hacker Bucin</option>
+                        <option value="pantun">• Pantun</option>
+                        <option value="quotes">• Quotes</option>
+                    </optgroup>
+                    <optgroup label="- [ ISLAMIC ] -">
+                        <option value="hijriah">• Hijriah</option>
+                        <option value="jadwalsholat">• Jadwal Sholat</option>
+                        <optgroup label="- [ SEARCH ] -">
+                            <option value="chordgitar">• Chord Gitar</option>
+                            <option value="lyricsearch">• Lyrics Search</option>
+                        </optgroup>
+                        <optgroup label="- [ STALKING ] -">
+                            <option value="Instagram">• Instagram</option>
+                            <option value="youtube">• You Tube</option>
+                        </optgroup>
+                        <optgroup label="- [ TOOLS ] -">
+                            <option value="ip-lookup">• Ip Lookup</option>
+                            <option value="shortlink">• Short Link</option>
+                            <option value="translate">• Translate</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+
+            <div class="container">
+                <h2>Information API</h2>
+                <div id="apiInfo">
+                    <p>
+                        <strong>Select an API</strong> to see more information.
+                    </p>
+                </div>
+
+                <div id="apiLinks">
+                    <button id="apiLinkBtnVisit" disabled onclick="visitApi()">Visit API</button>
+                </div>
+            </div>
+
+            <div class="container">
+                <h2>How to use the API</h2>
+                <ol>
+                    <li>Add a new <a href="https://play.google.com/store/apps/dev?id=7857280643314172854">AutoResponder</a> rule.</li>
+                    <li>
+                        <p></p>
+                        In your AutoResponder <a href="https://telegra.ph/file/bda82bd6bfdf76ade1b7c.jpg">rule</a>, adjust the <a href="https://telegra.ph/file/e134c21c32a7e9a281983.jpg">keyword</a> command to your needs.
+                    </li>
+                    <p></p>
+                    <li>Select the <a href="https://telegra.ph/file/dd0a3addc71707faf5ca6.jpg">Web server</a> option in your AutoResponder rule and enter the API URL.</li>
+                    <p></p>
+                    <li>
+                        The Basic Auth and <a href="https://telegra.ph/file/1af1073176570fe184a3c.jpg">Headers</a> options are optional. Please refer to the comments in the code above if you'd like to use them.
+                    </li>
+                    <p></p>
+                    <li>That's it! You are now ready to test your web server integration.</li>
+                </ol>
+                <p><strong>Doesn't work?</strong> Ask customer service :</p>
+                <button id="apiLinkBtn" onclick="visitOther('help')">Chat cs ( Max )</button>
+            </div>
+
+            <div class="container">
+                <h2>Contribution</h2>
+                <p>
+                    Special Thanks To :
+                </p>
+                <button id="apiLinkBtn" onclick="visitCredits('itsreimau')">Itsreimau - SC</button>
+                <button id="apiLinkBtn" onclick="visitCredits('anargya')">Anargya - API</button>
+                <button id="apiLinkBtn" onclick="visitCredits('AutoResponderAI')">AutoResponder.ai</button>
+
+                <button id="apiLinkBtn" onclick="visitCredits('nyxs')">Nyxs Rest-API</button>
+                <button id="apiLinkBtn" onclick="visitCredits('sandipbaruwal')">OtinXSandip Rest-API</button>
+            </div>
+
+            <div class="container">
+                <h2>Donate</h2>
+                <p>
+                    Support The Developer :
+                </p>
+                <button id="apiLinkBtn" onclick="visitDonate('saweria')">Saweria</button>
+            </div>
+
+            <div class="container">
+                <h2>Latest update</h2>
+                <p>
+                    Date : 03/11/2024
+                </p>
+                <p></p>
+                <button id="apiLinkBtn" onclick="visitOther('vikaru-bot')">Vikaru-Bot</button>
+            </div>
+            <script>
+                var a = document.getElementById('floating');
+                function playmusic() {
+                    a.style.display = "none";
+                    var audio = new Audio('https://files.catbox.moe/x5v904.mp3');
+                    audio.play();
+                }
+            </script>
+
+            <footer>
+                <p>
+                    &copy; 2024 <a href="https://linktr.ee/Maxtream_09">Maxtream_09</a>. All Rights Reserved.
+                </p>
+            </footer>
+
+            <script src="assets/js/script.js"></script>
+        </body>
+    </html>

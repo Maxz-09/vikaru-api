@@ -1,0 +1,142 @@
+.floating {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.floating-body {
+    display: flex;
+    height:80vh;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.floating-body div {
+    border-radius: 20px;
+    padding: 10px;
+    margin: auto;
+    width: 100%;
+    background-color: #222B3B;
+}
+
+.floating-body button {
+    cursor: pointer;
+    font-size: 1.1em;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #2A4E4D;
+    border: 1;
+    margin-top: 20px;
+    color: #FFFFFF;
+    padding: 10px;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    background-color: #111824;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    overflow: hidden;
+    text-align: center;
+    background-color: #222B3B;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    margin-right: 10px;
+}
+
+#apiInfo {
+    margin-top: 20px;
+}
+
+ol {
+    text-align: left;
+}
+
+footer {
+    background-color: #303030E0;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+a {
+    color: #CFFFF4
+}
+
+#apiLinks {
+    margin-top: 20px;
+}
+
+#apiLinkBtnVisit {
+    padding: 10px;
+    background-color: #2A4E4D;
+    color: #FFFFFF;
+    border: 1;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#apiLinkBtnVisit:disabled {
+    background-color: #939393;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: not-allowed;
+}
+
+#apiLinkBtn {
+    padding: 10px;
+    background-color: #2A4E4D;
+    color: #FFFFFF;
+    border: 1;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.particle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  animation: fall 2s linear infinite;
+}
+
+@keyframes fall {
+  100% {
+    top: 100vh;
+  }
+}
+
+@media (min-height: 500px) {
+    .particle {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+    }
+}
